@@ -4,16 +4,16 @@ import java.util.Random;
 
 public class Deck_OfCards {
 
-    /*
-     * Creating a deck of cards shuffling it and distributing it to players
-     */
+    
+     // Creating a deck of cards shuffling it and distributing it to players
+     
     String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
     String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
     String[][] deck = new String[suits.length][ranks.length];
 
-    /*
-     * deckOfCard is used to initialize the deck with cards
-     */
+    
+     // deckOfCard is used to initialize the deck with cards
+     
     public void deckOfCard() {
         for (int row = 0; row < suits.length; row++) {
             for (int column = 0; column < ranks.length; column++) {
@@ -22,9 +22,9 @@ public class Deck_OfCards {
         }
     }
 
-    /*
-     * shuffleCard are used to shuffle the deck
-     */
+    
+    // shuffleCard are used to shuffle the deck
+     
     public void shuffleCard() {
         Random random = new Random();
         for (int row = 0; row < suits.length; row++) {
@@ -38,9 +38,9 @@ public class Deck_OfCards {
         }
     }
 
-    /*
-     * display method is used to display the shuffled deck
-     */
+    
+     // display method is used to display the shuffled deck
+     
     public void display() {
         for (int row = 0; row < suits.length; row++) {
             System.out.print(" person" + row + "	");
